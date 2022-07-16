@@ -1,37 +1,31 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true,
+  env: {
+    browser: true,
+    es2021: true,
   },
-  'extends': [
+  extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    "plugin:import/recommended",
+    'plugin:import/recommended',
     'next/core-web-vitals',
     'google',
     'prettier',
   ],
-  'parser': '@typescript-eslint/parser',
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true,
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    'ecmaVersion': 'latest',
-    'sourceType': 'module',
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  'plugins': [
-    'react',
-    'react-hooks',
-    '@typescript-eslint',
-    'import',
-    'jsx-a11y'
-  ],
-  'rules': {
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'import', 'jsx-a11y'],
+  rules: {
     'require-jsdoc': ['off'],
-    'import/order': ['error', {'alphabetize': {'order': 'asc'}}],
+    'import/order': ['error', { alphabetize: { order: 'asc' } }],
     '@next/next/no-img-element': ['off'],
   },
-};
+}
