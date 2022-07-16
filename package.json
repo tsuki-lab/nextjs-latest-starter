@@ -11,7 +11,8 @@
     "typecheck": "tsc",
     "prettier": "prettier --config .prettierrc.json",
     "prettier:check": "yarn prettier --check './**/*.{ts,tsx,json,md}'",
-    "prettier:write": "yarn prettier --write './**/*.{ts,tsx,json,md}'"
+    "prettier:write": "yarn prettier --write './**/*.{ts,tsx,json,md}'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.2.2",
