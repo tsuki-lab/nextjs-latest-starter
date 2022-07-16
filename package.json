@@ -8,11 +8,10 @@
     "start": "next start",
     "lint": "next lint --dir src",
     "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{css,scss,ts,tsx}'",
-    "fix": "yarn lint --fix && yarn stylelint --fix && yarn prettier:write",
+    "fix": "yarn lint --fix && yarn stylelint --fix && yarn format",
     "typecheck": "tsc",
-    "prettier": "prettier --config .prettierrc.json",
-    "prettier:check": "yarn prettier --check './**/*.{ts,tsx,json,md}'",
-    "prettier:write": "yarn prettier --write './**/*.{ts,tsx,json,md}'",
+    "prettier": "prettier --config .prettierrc.json './**/*.{ts,tsx,json,md}'",
+    "format": "yarn prettier --write",
     "prepare": "husky install"
   },
   "dependencies": {
