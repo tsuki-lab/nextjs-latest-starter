@@ -134,6 +134,11 @@ const Home: NextPage = () => {
             flex-grow: 1;
             align-items: center;
             justify-content: center;
+            color: #000;
+
+            &:focus {
+              outline-width: 1px;
+            }
           `}
         >
           Powered by{' '}
