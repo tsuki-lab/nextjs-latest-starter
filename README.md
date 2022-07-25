@@ -122,3 +122,7 @@ yarn dev
 ```
 
 [`localhost:3000`](http://localhost:3000)が立ち上がれば完了です。
+
+## License
+
+MIT

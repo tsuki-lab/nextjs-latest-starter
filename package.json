@@ -1,7 +1,13 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:tsuki-lab/nextjs-latest-starter.git"
+  },
+  "author": "hanetsuki <me@tsuki-lab.net> (https://github.com/tsuki-lab)",
+  "license": "MIT",
   "scripts": {
     "dev": "run-p dev:*",
     "dev:next": "next dev",
