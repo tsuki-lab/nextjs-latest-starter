@@ -123,6 +123,70 @@ yarn dev
 
 [`localhost:3000`](http://localhost:3000)が立ち上がれば完了です。
 
+## Styles
+
+### Reset CSS
+
+Installed [ress](https://github.com/filipelinhares/ress).
+
+### Global
+
+Setting to `globalStyle` from [\_app.tsx](./src/pages/_app.tsx).
+
+```tsx
+const globalStyle = css`
+  html {
+    --color-primary: #3a4452;
+    --color-secondary: #bfcbdc;
+    --color-base: #f6f7f8;
+    --color-accent: #d35692;
+    --color-white: #fdfdfd;
+    --color-black: #1f1f1f;
+  }
+
+  body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  a {
+    color: var(--color-secondary);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+  }
+`
+```
+
+### Media Query
+
+Setting to [media-query.ts](./src/styles/media-query.ts).
+
+Usage.
+
+```tsx
+<div
+  css={css`
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    ${sp} {
+      width: 100%;
+      flex-direction: column;
+    }
+  `}
+>
+  ...
+</div>
+```
+
 ## License
 
 MIT
