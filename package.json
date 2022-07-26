@@ -1,6 +1,6 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "repository": {
     "type": "git",
@@ -40,6 +40,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-next": "12.2.2",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
     "npm-run-all": "^4.1.5",
     "pathpida": "^0.18.1",

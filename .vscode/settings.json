@@ -7,5 +7,6 @@
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "prettier.configPath": ".prettierrc.json",
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "stylelint.validate": ["css", "scss", "typescript", "typescriptreact"]
 }
