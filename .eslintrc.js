@@ -9,7 +9,9 @@ module.exports = {
     'google',
     'prettier',
   ],
+  plugins: ['prettier'],
   rules: {
+    'prettier/prettier': ['error'],
     'require-jsdoc': ['off'],
     'import/order': ['error', { alphabetize: { order: 'asc' } }],
     '@next/next/no-img-element': ['off'],
