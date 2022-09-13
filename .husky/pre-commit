@@ -1,7 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn typecheck
-yarn lint
-yarn stylelint
-yarn prettier -l
+yarn lint-staged
