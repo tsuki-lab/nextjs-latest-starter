@@ -1,6 +1,6 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -19,15 +19,15 @@
     "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{css,scss,ts,tsx}'",
     "fix": "yarn lint --fix && yarn stylelint --fix && yarn format",
     "typecheck": "tsc",
-    "prettier": "prettier --config .prettierrc.json './**/*.{ts,tsx,json,md}'",
+    "prettier": "prettier --config .prettierrc.json './**/*.{js,jsx,ts,tsx,json,md}'",
     "format": "yarn prettier --write",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "next": "12.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "@emotion/react": "^11.10.4",
+    "next": "^12.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "ress": "^5.0.2"
   },
   "devDependencies": {
@@ -41,6 +41,7 @@
     "eslint-config-next": "12.2.2",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "npm-run-all": "^4.1.5",
     "pathpida": "^0.18.1",
     "postcss-syntax": "^0.36.2",
@@ -50,6 +51,14 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^26.0.0",
     "stylelint-prettier": "^2.0.0",
-    "typescript": "4.7.4"
+    "typescript": "^4.8.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn lint",
+      "yarn stylelint"
+    ],
+    "*.{css,scss}": "yarn stylelint",
+    "*.{css,scss,js,jsx,ts,tsx,json,md}": "yarn format"
   }
 }
