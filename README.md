@@ -6,11 +6,11 @@ Next.js + Emotion 環境で Linter や Formatter の構築が完了している�
 
 | package                                        | version |
 | ---------------------------------------------- | ------- |
-| next                                           | 12.2.2  |
+| next                                           | 12.3    |
 | react                                          | 18.2.0  |
-| emotion                                        | 11.9.3  |
+| emotion                                        | 11.10.4 |
 | ress                                           | 5.0.2   |
-| typescript                                     | 4.7.4   |
+| typescript                                     | 4.8.3   |
 | [pathpida](https://github.com/aspida/pathpida) | 2.7.1   |
 | Node.js                                        | 16.15.0 |
 
