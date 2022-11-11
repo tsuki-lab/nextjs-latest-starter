@@ -21,6 +21,12 @@ Next.js v13 + CSS Modules 環境で Linter や Formatter の構築が完了し�
 yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter
 ```
 
+**Next.js v12**
+
+```shell
+yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter/tree/nextjs-12
+```
+
 ## Building environment
 
 ### 1. nodenv のインストール
