@@ -52,7 +52,7 @@
   align-items: center;
   justify-content: center;
 
-  @include sp {
+  @include media-query.sp {
     width: 100%;
     flex-direction: column;
   }
