@@ -1,0 +1,40 @@
+@use 'media-query';
+
+@mixin onlySpStyle {
+  @include media-query.tb {
+    display: none !important;
+  }
+  @include media-query.pc {
+    display: none !important;
+  }
+}
+
+@mixin onlyTbStyle {
+  @include media-query.sp {
+    display: none !important;
+  }
+  @include media-query.pc {
+    display: none !important;
+  }
+}
+
+@mixin onlyPcStyle {
+  @include media-query.sp {
+    display: none !important;
+  }
+  @include media-query.tb {
+    display: none !important;
+  }
+}
+
+@mixin onlyNotSpStyle {
+  @include media-query.sp {
+    display: none !important;
+  }
+}
+
+@mixin onlyNotPcStyle {
+  @include media-query.pc {
+    display: none !important;
+  }
+}

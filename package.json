@@ -1,6 +1,6 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -12,11 +12,13 @@
     "dev": "run-p dev:*",
     "dev:next": "next dev",
     "dev:path": "yarn pathpida -w",
+    "dev:css-module-types": "yarn css-module-types -w",
     "build": "yarn pathpida && next build",
     "start": "next start",
     "pathpida": "pathpida -p .gitignore -o ./src/lib -s",
-    "lint": "next lint --dir src",
-    "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{css,scss,ts,tsx}'",
+    "css-module-types": "tcm -p '**/*.module.scss' src",
+    "lint": "eslint src --ext .tsx,.ts",
+    "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{css,scss}'",
     "fix": "yarn lint --fix && yarn stylelint --fix && yarn format",
     "typecheck": "tsc",
     "prettier": "prettier --config .prettierrc.json './**/*.{js,jsx,ts,tsx,json,md}'",
@@ -24,40 +26,37 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.4",
-    "next": "^12.3.0",
+    "next": "^13.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ress": "^5.0.2"
   },
   "devDependencies": {
-    "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/node": "18.0.5",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "eslint": "^8.19.0",
+    "eslint": "^8.27.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-next": "12.2.2",
+    "eslint-config-next": "^13.0.2",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "npm-run-all": "^4.1.5",
     "pathpida": "^0.18.1",
-    "postcss-syntax": "^0.36.2",
+    "postcss": "^8.4.19",
     "prettier": "^2.7.1",
-    "stylelint": "^14.9.1",
+    "sass": "^1.56.1",
+    "stylelint": "^14.14.1",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-prettier": "^2.0.0",
-    "typescript": "^4.8.3"
+    "typed-css-modules": "^0.7.2",
+    "typescript": "^4.8.4"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "yarn lint",
-      "yarn stylelint"
-    ],
+    "*.{ts,tsx}": "yarn lint",
     "*.{css,scss}": "yarn stylelint",
     "*.{css,scss,js,jsx,ts,tsx,json,md}": "yarn format"
   }

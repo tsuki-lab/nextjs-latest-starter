@@ -1,0 +1,33 @@
+.card {
+  max-width: 300px;
+  padding: 1.5rem;
+  border: 1px solid var(--color-secondary);
+  margin: 1rem;
+  border-radius: 10px;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+
+  &::after {
+    content: ' →';
+  }
+}
+
+.description {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
