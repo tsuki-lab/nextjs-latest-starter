@@ -17,7 +17,7 @@
     "start": "next start",
     "pathpida": "pathpida -p .gitignore -o ./src/lib -s",
     "css-module-types": "tcm -p '**/*.module.scss' src",
-    "lint": "next lint --dir src",
+    "lint": "eslint src --ext .tsx,.ts",
     "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{css,scss}'",
     "fix": "yarn lint --fix && yarn stylelint --fix && yarn format",
     "typecheck": "tsc",
@@ -56,10 +56,7 @@
     "typescript": "^4.8.3"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "yarn lint",
-      "yarn stylelint"
-    ],
+    "*.{ts,tsx}": "yarn lint",
     "*.{css,scss}": "yarn stylelint",
     "*.{css,scss,js,jsx,ts,tsx,json,md}": "yarn format"
   }
