@@ -1,0 +1,75 @@
+@use 'media-query';
+
+.container {
+  padding: 0 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1.15;
+  text-align: center;
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+}
+
+.message {
+  margin: 4rem 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+
+  code {
+    padding: 0.75rem;
+    background: var(--color-base);
+    border-radius: 5px;
+    color: var(--color-primary);
+    font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
+      'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+    font-size: 1.1rem;
+  }
+}
+
+.cards {
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @include sp {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-base);
+
+  a {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+  }
+}

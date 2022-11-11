@@ -1,8 +1,20 @@
 /** スマートフォン用レイアウト 600px以上の範囲に収めるデザイン */
-export const sp = `@media (max-width: 599px)`
+@mixin sp {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
 
 /** タブレット用レイアウト 600px以上の範囲に収めるデザイン */
-export const tb = `@media (min-width: 600px)`
+@mixin tb {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
 
 /** PC用レイアウト 1,025px以上の範囲に収めるデザイン */
-export const pc = `@media (min-width: 1025px)`
+@mixin pc {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
