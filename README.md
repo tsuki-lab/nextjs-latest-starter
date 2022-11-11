@@ -1,16 +1,15 @@
 # Next.js latest starter
 
-Next.js + Emotion 環境で Linter や Formatter の構築が完了しているスターターリポジトリです。
+Next.js v13 + CSS Modules 環境で Linter や Formatter の構築が完了しているスターターリポジトリです。
 
 ## Dependencies
 
 | package                                        | version |
 | ---------------------------------------------- | ------- |
-| next                                           | 12.3    |
+| next                                           | 13.0.2  |
 | react                                          | 18.2.0  |
-| emotion                                        | 11.10.4 |
 | ress                                           | 5.0.2   |
-| typescript                                     | 4.8.3   |
+| typescript                                     | 4.8.4   |
 | [pathpida](https://github.com/aspida/pathpida) | 2.7.1   |
 | Node.js                                        | 16.15.0 |
 
@@ -131,60 +130,47 @@ Installed [ress](https://github.com/filipelinhares/ress).
 
 ### Global
 
-Setting to `globalStyle` from [\_app.tsx](./src/pages/_app.tsx).
+Setting to `globalStyle` from [global.css](./src/styles/global.css).
 
-```tsx
-const globalStyle = css`
-  html {
-    --color-primary: #3a4452;
-    --color-secondary: #bfcbdc;
-    --color-base: #f6f7f8;
-    --color-accent: #d35692;
-    --color-white: #fdfdfd;
-    --color-black: #1f1f1f;
+```css
+html {
+  --color-primary: #3a4452;
+  --color-secondary: #bfcbdc;
+  --color-base: #f6f7f8;
+  --color-accent: #d35692;
+  --color-white: #fdfdfd;
+  --color-black: #1f1f1f;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+a {
+  color: var(--color-secondary);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-accent);
+    text-decoration: underline;
   }
-
-  body {
-    background-color: var(--color-white);
-    color: var(--color-black);
-  }
-
-  a {
-    color: var(--color-secondary);
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-accent);
-      text-decoration: underline;
-    }
-  }
-`
+}
 ```
 
 ### Media Query
 
-Setting to [media-query.ts](./src/styles/media-query.ts).
+Setting to [media-query.scss](./src/styles/media-query.scss).
 
 Usage.
 
-```tsx
-<div
-  css={css`
-    display: flex;
-    max-width: 800px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+```scss
+@use 'media-query';
 
-    ${sp} {
-      width: 100%;
-      flex-direction: column;
-    }
-  `}
->
-  ...
-</div>
+@include media-query.sp {
+  // ...
+}
 ```
 
 ## License
