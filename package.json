@@ -32,7 +32,7 @@
     "ress": "^5.0.2"
   },
   "devDependencies": {
-    "@types/node": "18.0.5",
+    "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
