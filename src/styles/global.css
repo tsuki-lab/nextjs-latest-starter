@@ -1,10 +1,10 @@
 html {
-  --color-primary: #3a4452;
-  --color-secondary: #bfcbdc;
-  --color-base: #f6f7f8;
-  --color-accent: #d35692;
+  --color-primary: #2d2d2d;
+  --color-secondary: #b38e4b;
+  --color-base: #a39e9e;
+  --color-accent: #f0a114;
   --color-white: #fdfdfd;
-  --color-black: #1f1f1f;
+  --color-black: #0f0f0f;
 }
 
 body {
@@ -14,11 +14,11 @@ body {
 
 a {
   color: var(--color-secondary);
+}
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--color-accent);
-    text-decoration: underline;
-  }
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-accent);
+  text-decoration: underline;
 }

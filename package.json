@@ -1,6 +1,6 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -26,24 +26,24 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "^13.0.2",
+    "next": "^13.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ress": "^5.0.2"
   },
   "devDependencies": {
-    "@types/node": "18.0.5",
-    "@types/react": "18.0.15",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "eslint": "^8.27.0",
+    "eslint": "^8.32.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-next": "^13.0.2",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-next": "^13.1.2",
+    "eslint-config-prettier": "^8.6.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "npm-run-all": "^4.1.5",
-    "pathpida": "^0.18.1",
+    "pathpida": "^0.20.1",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",
     "sass": "^1.56.1",
@@ -53,11 +53,11 @@
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-prettier": "^2.0.0",
     "typed-css-modules": "^0.7.2",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.4"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "yarn lint",
-    "*.{css,scss}": "yarn stylelint",
+    "*.{ts,tsx}": "yarn lint --fix",
+    "*.{css,scss}": "yarn stylelint --fix",
     "*.{css,scss,js,jsx,ts,tsx,json,md}": "yarn format"
   }
 }
