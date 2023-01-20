@@ -56,7 +56,8 @@
     "typescript": "^4.9.4"
   },
   "lint-staged": {
-    "*.{ts,tsx,css,scss}": "yarn fix",
+    "*.{ts,tsx}": "yarn lint --fix",
+    "*.{css,scss}": "yarn stylelint --fix",
     "*.{css,scss,js,jsx,ts,tsx,json,md}": "yarn format"
   }
 }
