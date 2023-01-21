@@ -6,7 +6,7 @@ Next.js v13 + CSS Modules 環境で Linter や Formatter の構築が完了し�
 
 | package                                        | version |
 | ---------------------------------------------- | ------- |
-| next                                           | 13.1.2  |
+| next                                           | 13.1.4  |
 | react                                          | 18.2.0  |
 | ress                                           | 5.0.2   |
 | typescript                                     | 4.9.4   |
