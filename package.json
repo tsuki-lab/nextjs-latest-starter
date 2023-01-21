@@ -1,6 +1,6 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": true,
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "^13.1.2",
+    "next": "^13.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ress": "^5.0.2"
