@@ -49,7 +49,7 @@
     "sass": "^1.56.1",
     "stylelint": "^14.14.1",
     "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-prettier": "^2.0.0",
     "typed-css-modules": "^0.7.2",
