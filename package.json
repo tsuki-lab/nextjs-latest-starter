@@ -1,6 +1,6 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "^13.1.4",
+    "next": "^13.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ress": "^5.0.2"
@@ -38,7 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "eslint": "^8.32.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-next": "^13.1.2",
+    "eslint-config-next": "^13.2.1",
     "eslint-config-prettier": "^8.6.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
@@ -53,7 +53,7 @@
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-prettier": "^2.0.0",
     "typed-css-modules": "^0.7.2",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   },
   "lint-staged": {
     "*.{ts,tsx}": "yarn lint --fix",
