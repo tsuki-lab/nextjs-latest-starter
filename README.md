@@ -4,14 +4,13 @@ Next.js v13 + CSS Modules 環境で Linter や Formatter の構築が完了し�
 
 ## Dependencies
 
-| package                                        | version |
-| ---------------------------------------------- | ------- |
-| next                                           | 13.2.1  |
-| react                                          | 18.2.0  |
-| ress                                           | 5.0.2   |
-| typescript                                     | 4.9.5   |
-| [pathpida](https://github.com/aspida/pathpida) | 0.20.1  |
-| Node.js                                        | 18.14.0 |
+| package    | version |
+| ---------- | ------- |
+| next       | 13.2.1  |
+| react      | 18.2.0  |
+| ress       | 5.0.2   |
+| typescript | 4.9.5   |
+| Node.js    | 18.14.0 |
 
 ## Usage
 
@@ -27,11 +26,11 @@ yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter
 yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter/tree/nextjs-12
 ```
 
-**Next.js Beta**
-https://beta.nextjs.org/docs
+**Next.js Pages**
+https://nextjs.org/docs/basic-features/pages
 
 ```shell
-yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter/tree/beta
+yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter/tree/nextjs-pages
 ```
 
 ## Building environment
