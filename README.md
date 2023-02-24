@@ -26,6 +26,13 @@ yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter
 yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter/tree/nextjs-12
 ```
 
+**Next.js Pages**
+https://nextjs.org/docs/basic-features/pages
+
+```shell
+yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter/tree/nextjs-pages
+```
+
 ## Building environment
 
 ### 1. nodenv のインストール
