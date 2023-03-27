@@ -1,6 +1,6 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "private": true,
   "repository": {
     "type": "git",
@@ -11,10 +11,10 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:next": "next dev",
-    "dev:css-module-types": "yarn css-module-types -w",
+    "dev:happy-css-modules": "yarn happy-css-modules -w",
     "build": "next build",
     "start": "next start",
-    "css-module-types": "tcm -p '**/*.module.scss' src",
+    "happy-css-modules": "hcm 'src/**/*.module.scss' --sassLoadPaths=src/styles",
     "lint": "eslint src --ext .tsx,.ts",
     "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{css,scss}'",
     "fix": "yarn lint --fix && yarn stylelint --fix && yarn format",
@@ -24,7 +24,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "^13.2.1",
+    "next": "^13.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ress": "^5.0.2"
@@ -38,6 +38,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-next": "^13.2.1",
     "eslint-config-prettier": "^8.6.0",
+    "happy-css-modules": "^2.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.0.3",
     "npm-run-all": "^4.1.5",
@@ -49,8 +50,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-prettier": "^3.0.0",
-    "typed-css-modules": "^0.7.2",
-    "typescript": "^4.9.5"
+    "typescript": "^5.0.2"
   },
   "lint-staged": {
     "*.{ts,tsx}": "yarn lint --fix",

@@ -33,4 +33,5 @@ yarn-error.log*
 *.tsbuildinfo
 
 # source
-$path.ts
+*.module.scss.d.ts
+*.module.scss.d.ts.map
