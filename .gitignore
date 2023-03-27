@@ -34,5 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-# css-module-types
+# happy-css-modules
 *.module.scss.d.ts
+*.module.scss.d.ts.map

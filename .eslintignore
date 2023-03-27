@@ -1,1 +1,4 @@
-$path.ts
+next-env.d.ts
+
+*.module.scss.d.ts
+*.module.scss.d.ts.map

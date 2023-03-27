@@ -1,19 +1,19 @@
+import styles from './page.module.scss'
 import { Card } from '@/components/Card'
-import Styles from '@/styles/pages/index.module.scss'
 
 export default function Home() {
   return (
-    <div className={Styles.container}>
-      <main className={Styles.main}>
-        <h1 className={Styles.pageTitle}>
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <h1 className={styles.pageTitle}>
           <a href="https://nextjs.org">Next.js</a> latest starter
         </h1>
 
-        <p className={Styles.message}>
+        <p className={styles.message}>
           Get started by editing <code>pages/index.tsx</code>
         </p>
 
-        <div className={Styles.cards}>
+        <div className={styles.cards}>
           <Card
             href="https://nextjs.org/docs"
             title="Documentation"
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={Styles.footer}>
+      <footer className={styles.footer}>
         <a
           href="https://github.com/tsuki-lab"
           target="_blank"

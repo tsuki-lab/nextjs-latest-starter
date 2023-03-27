@@ -6,15 +6,16 @@ Next.js v13 + CSS Modules 環境で Linter や Formatter の構築が完了し�
 
 | package    | version |
 | ---------- | ------- |
-| next       | 13.2.1  |
+| next       | 13.2.4  |
 | react      | 18.2.0  |
 | ress       | 5.0.2   |
-| typescript | 4.9.5   |
+| typescript | 5.0.2   |
 | Node.js    | 18.14.0 |
 
 ## Usage
 
-下記のコマンドを用いることで、このリポジトリの内容で環境を作成することができます。
+下記のコマンドを用いることで、このリポジトリの内容で環境を作成することができます。<br />
+利用する際に、デフォルトで LICENSE や README.md が含まれているので、不要な場合は削除してください。
 
 ```shell
 yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter
