@@ -1,16 +1,12 @@
 # Next.js latest starter
 
+🇺🇸 [English](./README_EN.md)
+
 Next.js v13 + CSS Modules 環境で Linter や Formatter の構築が完了しているスターターリポジトリです。
 
 ## Dependencies
 
-| package    | version |
-| ---------- | ------- |
-| next       | 13.2.4  |
-| react      | 18.2.0  |
-| ress       | 5.0.2   |
-| typescript | 5.0.2   |
-| Node.js    | 18.14.0 |
+詳しくは、[package.json](./package.json)を参照してください。
 
 ## Usage
 
@@ -143,7 +139,7 @@ Installed [ress](https://github.com/filipelinhares/ress).
 
 ### Global
 
-Setting to `globalStyle` from [global.css](./src/styles/global.css).
+Setting to `globalStyle` from [global.scss](./src/styles/global.scss).
 
 ```css
 html {
