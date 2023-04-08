@@ -6,11 +6,10 @@ module.exports = {
     'stylelint-prettier/recommended',
   ],
   rules: {
-    'string-quotes': 'single',
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
     'function-url-quotes': 'always',
     'selector-class-pattern': null,
     'scss/at-mixin-pattern': null,
   },
-}
+};
