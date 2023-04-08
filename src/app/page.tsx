@@ -1,5 +1,5 @@
-import styles from './page.module.scss'
-import { Card } from '@/components/Card'
+import styles from './page.module.scss';
+import { Card } from '@/components/Card';
 
 export default function Home() {
   return (
@@ -50,5 +50,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }

@@ -3,5 +3,5 @@
   "tabWidth": 2,
   "singleQuote": true,
   "jsxSingleQuote": false,
-  "semi": false
+  "semi": true
 }
