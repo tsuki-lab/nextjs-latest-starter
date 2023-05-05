@@ -1,6 +1,6 @@
 {
   "name": "nextjs-latest-starter",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -24,20 +24,20 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "^13.3.4",
+    "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ress": "^5.0.2"
   },
   "devDependencies": {
-    "@types/node": "18.16.3",
-    "@types/react": "18.2.3",
+    "@types/node": "^18.16.4",
+    "@types/react": "18.2.5",
     "@types/react-dom": "18.2.3",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
     "eslint": "^8.39.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-next": "^13.3.4",
+    "eslint-config-next": "^13.4.1",
     "eslint-config-prettier": "^8.8.0",
     "happy-css-modules": "^2.1.0",
     "husky": "^8.0.3",

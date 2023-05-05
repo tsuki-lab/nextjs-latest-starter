@@ -10,7 +10,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.message}>
-          Get started by editing <code>pages/index.tsx</code>
+          Get started by editing <code>app/page.tsx</code>
         </p>
 
         <div className={styles.cards}>
