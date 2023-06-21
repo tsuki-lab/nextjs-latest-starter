@@ -19,8 +19,6 @@ yarn create next-app -e https://github.com/tsuki-lab/nextjs-latest-starter
 
 ## Styles
 
-Installed [ress](https://github.com/filipelinhares/ress).
-
 ### Global
 
 Setting to `globalStyle` from [global.scss](./src/styles/global.scss).
