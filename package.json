@@ -8,6 +8,9 @@
   },
   "author": "hanetsuki <me@tsuki-lab.net> (https://github.com/tsuki-lab)",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "run-p dev:*",
     "dev:next": "next dev",
