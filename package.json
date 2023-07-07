@@ -48,7 +48,7 @@
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "sass": "^1.63.5",
-    "stylelint": "^15.8.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-idiomatic-order": "^9.0.0",
     "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-prettier": "^3.0.0",
